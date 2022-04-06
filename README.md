@@ -1,5 +1,7 @@
 # SimasterICSGen -- ICS Generator from Simaster Page
 
+[![Test and build SimasterICSGen](https://github.com/refeed/SimasterICSGen/actions/workflows/gotest.yml/badge.svg)](https://github.com/refeed/SimasterICSGen/actions/workflows/gotest.yml)
+
 Easily import your exam and class schedule with SimasterICSGen! This program
 will convert your Simaster schedule page from HTML to an ICS file which can
 be imported by a variety of calendar apps including Google Calendar. Say good
