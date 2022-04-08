@@ -19,8 +19,9 @@ func TestGenerate(t *testing.T) {
 		fmt.Println(err)
 	}
 
-	expected := string(fics)
-	actual := Generate(f)
+	expectedICS := string(fics)
+	actualICS, actualEventNum := Generate(f)
 
-	assert.Equal(t, expected, actual)
+	assert.Equal(t, expectedICS, actualICS)
+	assert.Equal(t, 8, actualEventNum)
 }

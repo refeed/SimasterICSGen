@@ -8,9 +8,11 @@ import (
 	ics "github.com/arran4/golang-ical"
 )
 
-func Generate(examSchedHtml io.Reader) string {
+func Generate(examSchedHtml io.Reader) (string, int) {
 	cal := ics.NewCalendar()
 	cal.SetMethod(ics.MethodRequest)
+
+	eventExportedNum := 0
 
 	for _, exam := range simasterexam.Parse(examSchedHtml) {
 		eventTitle := fmt.Sprintf("Ujian %v (%v) (Class: %v)", exam.Subject, exam.Code, exam.Class)
@@ -21,7 +23,8 @@ func Generate(examSchedHtml io.Reader) string {
 		event.SetSummary(eventTitle)
 		event.SetLocation(fmt.Sprintf("%v at chair %v", exam.Room, exam.Chair))
 		event.SetDescription(fmt.Sprintf("Code: %v\nSKS: %v", exam.Code, exam.Sks))
+		eventExportedNum++
 	}
 
-	return cal.Serialize()
+	return cal.Serialize(), eventExportedNum
 }

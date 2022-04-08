@@ -24,7 +24,7 @@ func main() {
 	checkErr(err)
 	defer f.Close()
 
-	result := smicsgen.Generate(f)
+	result, eventExportedNum := smicsgen.Generate(f)
 
 	cwd, err := os.Getwd()
 	checkErr(err)
@@ -37,7 +37,7 @@ func main() {
 	defer outF.Close()
 
 	outF.WriteString(result)
-	log.Printf("Success")
+	log.Printf("Successfully exported %v event(s)", eventExportedNum)
 }
 
 func checkErr(err error) {
