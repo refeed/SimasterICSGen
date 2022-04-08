@@ -1,6 +1,7 @@
 # SimasterICSGen -- ICS Generator from Simaster Page
 
 [![Test and build SimasterICSGen](https://github.com/refeed/SimasterICSGen/actions/workflows/gotest.yml/badge.svg)](https://github.com/refeed/SimasterICSGen/actions/workflows/gotest.yml)
+[![Build and Deploy simastericsgen-server](https://github.com/refeed/SimasterICSGen/actions/workflows/deploysmicsweb.yml/badge.svg)](https://github.com/refeed/SimasterICSGen/actions/workflows/deploysmicsweb.yml)
 
 Easily import your exam and class schedule with SimasterICSGen! This program
 will convert your Simaster schedule page from HTML to an ICS file which can
@@ -35,11 +36,11 @@ Calendar.
 
 ### Web based
 
-Coming soon
+Available at [https://refeed.github.io/SimasterICSGen/](https://refeed.github.io/SimasterICSGen/)
 
 ## TODO
 
-- Add unit tests
+- Add support for class schedule
 - Add more docstring
 
 ## License
