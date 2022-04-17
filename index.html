@@ -12,7 +12,18 @@
     </head>
     <body>
         <h1>SIMASTER Exam Schedule ICS Generator</h1>
-        <h2>1. Input your SIMASTER Jadwal Ujian.html file here:</h2>
+        <h2>1. Input your HTML file here:</h2>
+        Type of the html file:
+        <br>
+        <input type="radio" name="htmlType" value="exam" checked>
+        <label for="">Simaster Jadwal Ujian.html</label>
+        <br>
+        <input type="radio" name="htmlType" value="class">
+        <label for="">Simaster Jadwal Kuliah.html</label>
+        <br>
+        <br>
+        Input your HTML file here:
+        <br>
         <input type="file" id="htmlFileInput">
 
         <h2>2. Check your browser download ;)</h2>
@@ -39,7 +50,8 @@
 
                 const reader = new FileReader()
                 reader.addEventListener('load', (event) => {
-                    const [icsResult, numEvents] = convertICSfromHTML(event.target.result)
+                    const htmlType = document.querySelector('input[name=htmlType]:checked').value
+                    const [icsResult, numEvents] = convertICSfromHTML(event.target.result, htmlType)
                     alert(`Successfully exported ${numEvents} event(s)`)
                     console.log(`Successfully exported ${numEvents} event(s)`)
                     console.log(icsResult)
