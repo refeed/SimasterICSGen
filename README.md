@@ -40,7 +40,6 @@ Available at [https://refeed.github.io/SimasterICSGen/](https://refeed.github.io
 
 ## TODO
 
-- Add support for class schedule
 - Add more docstring
 
 ## License

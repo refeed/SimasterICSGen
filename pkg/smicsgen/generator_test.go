@@ -8,7 +8,7 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func TestGenerate(t *testing.T) {
+func TestGenerateExam(t *testing.T) {
 	f, err := os.Open("testdata/exam_input.html")
 	if err != nil {
 		fmt.Println(err)
@@ -20,7 +20,25 @@ func TestGenerate(t *testing.T) {
 	}
 
 	expectedICS := string(fics)
-	actualICS, actualEventNum := Generate(f)
+	actualICS, actualEventNum := GenerateExamICS(f)
+
+	assert.Equal(t, expectedICS, actualICS)
+	assert.Equal(t, 8, actualEventNum)
+}
+
+func TestGenerateClassICS(t *testing.T) {
+	f, err := os.Open("testdata/class_input.html")
+	if err != nil {
+		fmt.Println(err)
+	}
+	defer f.Close()
+	fics, err := os.ReadFile("testdata/class_expected.ics")
+	if err != nil {
+		fmt.Println(err)
+	}
+
+	expectedICS := string(fics)
+	actualICS, actualEventNum := GenerateClassICS(f)
 
 	assert.Equal(t, expectedICS, actualICS)
 	assert.Equal(t, 8, actualEventNum)

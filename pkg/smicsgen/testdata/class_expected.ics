@@ -1,0 +1,85 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//arran4//Golang ICS Library
+METHOD:REQUEST
+BEGIN:VEVENT
+UID:Proyek Aplikasi Dasar 2 (Kelas: PL3AA)
+DTSTART:20220211T060000Z
+DTEND:20220211T094000Z
+SUMMARY:Proyek Aplikasi Dasar 2 (Kelas: PL3AA)
+LOCATION:Ruang D.TEDI DARING 10
+RRULE:FREQ=WEEKLY;COUNT=16
+DESCRIPTION:Code: SVPL214402\nSKS: 2\nDivi Galih Prasetyo Putri\, S.Kom.\,
+  M.Kom.Novan Hartadi\, S.T.\, M.Sc.Ahmad Iwan Fadli\, S.Kom.\, M.Eng.
+END:VEVENT
+BEGIN:VEVENT
+UID:Keamanan Pengembangan Perangkat Lunak (Kelas: PL3AB)
+DTSTART:20220207T071500Z
+DTEND:20220207T085500Z
+SUMMARY:Keamanan Pengembangan Perangkat Lunak (Kelas: PL3AB)
+LOCATION:Ruang D.TEDI DARING 10
+RRULE:FREQ=WEEKLY;COUNT=16
+DESCRIPTION:Code: SVPL214403\nSKS: 2\nNur Rohman Rosyid\, S.T.\, M.T.\,
+  D.Eng.Dr.Eng. Ganjar Alfian\, S.T.\, M.Eng.
+END:VEVENT
+BEGIN:VEVENT
+UID:Interoperabilitas (Kelas: PL3AB)
+DTSTART:20220209T051500Z
+DTEND:20220209T065500Z
+SUMMARY:Interoperabilitas (Kelas: PL3AB)
+LOCATION:Ruang D.TEDI DARING 9
+RRULE:FREQ=WEEKLY;COUNT=16
+DESCRIPTION:Code: SVPL214404\nSKS: 2\nDr.Eng. Ganjar Alfian\, S.T.\,
+  M.Eng.Muhammad Fakhrurrifqi\, S.Kom\, M.Cs.Fitriansyah\,  S.Si.\, M.eng.
+END:VEVENT
+BEGIN:VEVENT
+UID:Praktikum Sistem Administrasi dan Informasi Terdistribusi (Kelas:
+  PL3AA)
+DTSTART:20220209T001500Z
+DTEND:20220209T035500Z
+SUMMARY:Praktikum Sistem Administrasi dan Informasi Terdistribusi (Kelas:
+  PL3AA)
+LOCATION:Ruang D.TEDI DARING 28
+RRULE:FREQ=WEEKLY;COUNT=16
+DESCRIPTION:Code: SVPL214405\nSKS: 2\nDr.Eng. Ganjar Alfian\, S.T.\,
+  M.Eng.Fitriansyah\,  S.Si.\, M.eng.
+END:VEVENT
+BEGIN:VEVENT
+UID:Praktikum Pemrograman Aplikasi Perangkat Bergerak 2 (Kelas: PL3AA)
+DTSTART:20220210T001500Z
+DTEND:20220210T035500Z
+SUMMARY:Praktikum Pemrograman Aplikasi Perangkat Bergerak 2 (Kelas: PL3AA)
+LOCATION:Ruang D.TEDI DARING 8
+RRULE:FREQ=WEEKLY;COUNT=16
+DESCRIPTION:Code: SVPL214406\nSKS: 2\nMargareta Hardiyanti\, S.Kom.\,
+  M.Eng.
+END:VEVENT
+BEGIN:VEVENT
+UID:Praktikum Animasi dan Desain Multimedia (Kelas: PL3AA)
+DTSTART:20220208T051500Z
+DTEND:20220208T085500Z
+SUMMARY:Praktikum Animasi dan Desain Multimedia (Kelas: PL3AA)
+LOCATION:Ruang D.TEDI DARING 9
+RRULE:FREQ=WEEKLY;COUNT=16
+DESCRIPTION:Code: SVPL214407\nSKS: 2\nYusron Fuadi\, S.Sn.\, M.Sn.
+END:VEVENT
+BEGIN:VEVENT
+UID:Animasi dan Desain Multimedia (Kelas: PL3AB)
+DTSTART:20220207T051500Z
+DTEND:20220207T065500Z
+SUMMARY:Animasi dan Desain Multimedia (Kelas: PL3AB)
+LOCATION:Ruang D.TEDI DARING 7
+RRULE:FREQ=WEEKLY;COUNT=16
+DESCRIPTION:Code: SVPL214408\nSKS: 2\nYusron Fuadi\, S.Sn.\, M.Sn.
+END:VEVENT
+BEGIN:VEVENT
+UID:Ide Kreatif dan Kewirausahaan (Kelas: PL3AA)
+DTSTART:20220207T001500Z
+DTEND:20220207T035500Z
+SUMMARY:Ide Kreatif dan Kewirausahaan (Kelas: PL3AA)
+LOCATION:Ruang D.TEDI DARING 7
+RRULE:FREQ=WEEKLY;COUNT=16
+DESCRIPTION:Code: SVPL214701\nSKS: 2\nDivi Galih Prasetyo Putri\, S.Kom.\,
+  M.Kom.Dinar Nugroho Pratomo\, S.Kom.\, M.IM.\, M.Cs.
+END:VEVENT
+END:VCALENDAR

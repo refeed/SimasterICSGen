@@ -10,6 +10,7 @@ import (
 
 var (
 	htmlFilePath   = flag.String("input", "", "(Mandatory) The HTML file of Simaster Jadwal Ujian page")
+	typeString     = flag.String("type", "exam", "Type of the HTML Page (exam, class)")
 	outputFilePath = flag.String("output", "result.ics", "The ICS output")
 )
 
@@ -24,7 +25,17 @@ func main() {
 	checkErr(err)
 	defer f.Close()
 
-	result, eventExportedNum := smicsgen.Generate(f)
+	var (
+		result           string
+		eventExportedNum int
+	)
+
+	switch *typeString {
+	case "exam":
+		result, eventExportedNum = smicsgen.GenerateExamICS(f)
+	case "class":
+		result, eventExportedNum = smicsgen.GenerateClassICS(f)
+	}
 
 	cwd, err := os.Getwd()
 	checkErr(err)
