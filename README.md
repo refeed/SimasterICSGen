@@ -11,6 +11,10 @@ favorite calendar apps.
 
 ## How to use
 
+### Video tutorial (web based)
+
+[![img_tag](https://img.youtube.com/vi/DvLRjajx9qs/0.jpg)](https://youtu.be/DvLRjajx9qs)
+
 ### CLI
 
 ```
